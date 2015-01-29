@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
  */
 public class LectorTest {
     
-   // String archivo = "D:/SemestreVIII/IngeSofII/juego.txt";
+    // String archivo = "D:/SemestreVIII/IngeSofII/juego.txt";
     String archivo = "C:/Users/Andres/Desktop/exploradores2.txt";
     
     @Test
@@ -54,7 +54,7 @@ public class LectorTest {
     
     /**
      *
-     * @author david Romero 29/01/2015
+     * @author David Romero 29/01/2015
      * Metodo que verifica si existe o no el archivo
      */
     @Test
@@ -64,10 +64,10 @@ public class LectorTest {
     
     /**
      *
-     * @author david Romero 29/01/2015
+     * @author David Romero 29/01/2015
      * Metodo que verifica si existe un string en la primera linea del documento
      */
-        @Test
+    @Test
     public void probarEntero() throws IOException{
         Lector l=new Lector(archivo);
         Posicion limite=l.getLimiteSuperior();
