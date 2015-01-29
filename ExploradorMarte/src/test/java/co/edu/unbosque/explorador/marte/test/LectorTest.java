@@ -17,7 +17,8 @@ import org.testng.annotations.Test;
  */
 public class LectorTest {
     
-    String archivo = "D:/SemestreVIII/IngeSofII/juego.txt";
+   // String archivo = "D:/SemestreVIII/IngeSofII/juego.txt";
+    String archivo = "C:/Users/Andres/Desktop/exploradores2.txt";
     
     @Test
     public void probarLecturaPrimerLinea() throws IOException{
@@ -59,6 +60,17 @@ public class LectorTest {
     @Test
     public void noExisteArchivo() throws FileNotFoundException, IOException{
         Lector leer = new Lector(archivo);
+    }
+    
+    /**
+     *
+     * @author david Romero 29/01/2015
+     * Metodo que verifica si existe un string en la primera linea del documento
+     */
+        @Test
+    public void probarEntero() throws IOException{
+        Lector l=new Lector(archivo);
+        Posicion limite=l.getLimiteSuperior();
     }
     
     
