@@ -11,7 +11,7 @@ import static co.edu.unbosque.swii.marte.exploradormarte.Orientacion.W;
 
 /**
  *
- * @author E205-1
+ * @author Ejemplo autor
  */
 public class Explorador {
 
