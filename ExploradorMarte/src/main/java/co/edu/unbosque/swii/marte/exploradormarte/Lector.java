@@ -33,11 +33,13 @@ public class Lector {
     
     public Lector(String archivo) throws FileNotFoundException {
         this.archivoJuego=new File(archivo);
-        if(!archivoJuego.exists())
-            throw new IllegalArgumentException("Archivo no especificado");        
+        if(!archivoJuego.exists()){
+            noExiste(archivo);
+        }else{       
         FileInputStream fin=new FileInputStream(archivoJuego);
         InputStreamReader isr=new InputStreamReader(fin);
         br=new BufferedReader(isr);
+        }
     }
 
     
@@ -68,5 +70,24 @@ public class Lector {
         lineaComandos=br.readLine().trim();
         return true;
     }
+ /**
+ *
+ * @author david Romero 29/01/2015
+ */
+         public void noExiste(String archivo)  {// metodo que comprueba que existe el archivo 
+      this.archivoJuego = new File(archivo);
+      
+      if(!archivoJuego.exists())
+        {
+            System.out.println("El fichero no existe");
+        }
+ 
+      }  
     
 }
+
+
+
+
+
+
