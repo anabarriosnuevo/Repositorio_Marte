@@ -23,6 +23,6 @@ public class MarteTest {
     
    @Test(expectedExceptions = IllegalArgumentException.class)
    public void noDebeRecibirValoresNegativosEnElConstructor(){
-       Marte m=new Marte(-2, -1);
+       Marte m = new Marte(-2, -1);
    }
 }
