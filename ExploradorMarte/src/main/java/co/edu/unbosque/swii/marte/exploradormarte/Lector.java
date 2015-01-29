@@ -47,7 +47,15 @@ public class Lector {
         if(limiteSuperior==null)
             limiteSuperior=br.readLine().trim();
         String x[]=limiteSuperior.split(" ");
-        return new Posicion(new Integer(x[0]),new Integer(x[1]));
+        try {
+        Integer.parseInt(x[0]);
+        Integer.parseInt(x[1]);
+        }catch (NumberFormatException nfe) {
+            
+             return null;
+        }
+    
+       return new Posicion(new Integer(x[0]),new Integer(x[1]));
     }
     
     public Posicion getOrientacion() throws IOException {
