@@ -110,6 +110,9 @@ public class ExploradorUnitTest {
         Assert.assertEquals(p.getOrientacion(), Orientacion.N);
     }
 
+    /**
+     * @autor Ana Maria
+     */
     @Test(expectedExceptions = IllegalArgumentException.class)
     public void letrasPermitidasMovimientos() {
         Explorador ex = new Explorador(new Posicion(1, 2), Orientacion.N);

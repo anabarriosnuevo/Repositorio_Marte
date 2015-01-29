@@ -20,7 +20,10 @@ public class MarteTest {
         Assert.assertEquals(10, m.getX());
         Assert.assertEquals(10, m.getY());
     }
-    
+    /**
+     * @autor Ana Maria
+     * 
+     */
    @Test(expectedExceptions = IllegalArgumentException.class)
    public void noDebeRecibirValoresNegativosEnElConstructor(){
        Marte m = new Marte(-2, -1);

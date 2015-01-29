@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 
 /**
  *
- * @author anamaria
+ * @author Ana Maria
  */
 public class OrientacionTest {
     
