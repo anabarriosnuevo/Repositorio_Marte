@@ -49,4 +49,15 @@ public class LectorTest {
        Assert.assertEquals(s,"IAIIAAA");
     }
     
+        
+    /**
+ *
+ * @author david Romero 29/01/2015
+ */
+        @Test
+    public void noexiste() throws FileNotFoundException, IOException{
+        Lector leer = new Lector("C:/Users/Andres/Desktop/exploradoe.txt");        
+    }
+
+    
 }
