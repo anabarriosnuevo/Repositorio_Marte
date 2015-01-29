@@ -11,4 +11,5 @@ package co.edu.unbosque.swii.marte.exploradormarte;
  */
 public class Ejemplo {
     
+    //es solo un ejemplo
 }
